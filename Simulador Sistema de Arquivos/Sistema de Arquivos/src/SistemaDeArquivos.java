@@ -4,11 +4,9 @@ public class SistemaDeArquivos {
     private final int TAMANHO_TOTAL = 100 * 1024; // 100MB em KB
     private int espacoUsado = 0;
     private final Map<String, Diretorio> repositorios = new HashMap<>();
-    //
     private final List<Bloco> blocosLivres = new ArrayList<>();
     private final Scanner scanner = new Scanner(System.in);
 
-    //
     public SistemaDeArquivos() {
         for (int i = 0; i < TAMANHO_TOTAL; i++) {
             blocosLivres.add(new Bloco(i));
@@ -23,7 +21,7 @@ public class SistemaDeArquivos {
                 processarOpcao(opcao);
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida! Por favor, insira um número válido.");
-                scanner.nextLine(); // Limpa o buffer do scanner
+                scanner.nextLine(); 
             }
         }
     }
