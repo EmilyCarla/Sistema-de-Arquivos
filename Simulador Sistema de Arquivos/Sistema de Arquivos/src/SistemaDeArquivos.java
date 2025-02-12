@@ -1,6 +1,5 @@
 import java.util.*;
 
-// Classe principal do sistema de arquivos
 public class SistemaDeArquivos {
     private final int TAMANHO_TOTAL = 100 * 1024; // 100MB em KB
     private int espacoUsado = 0;
